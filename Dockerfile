@@ -1,7 +1,7 @@
 FROM ubuntu:latest
 MAINTAINER ibrahimsarwar814@gmail.com
 RUN sudo apt update -y
-RUN sudo apt install -y apache2 \
+RUN apt install -y apache2 \
 	zip \
 	unzip
 RUN wget https://www.free-css.com/assets/files/free-css-templates/download/page292/microo.zip .
