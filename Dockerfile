@@ -1,11 +1,11 @@
 FROM ubuntu:latest
 MAINTAINER ibrahimsarwar814@gmail.com
-RUN sudo apt update -y
+RUN apt update -y
 RUN apt install -y apache2 \
 	zip \
 	unzip
 RUN wget https://www.free-css.com/assets/files/free-css-templates/download/page292/microo.zip .
-RUN sudo mv microo.zip /var/www/html/
+RUN mv microo.zip /var/www/html/
 WORKDIR /var/www/html
 RUN sudo unzip microo.zip
 RUN sudo cp -rvf microo-html/* .
