@@ -1,6 +1,6 @@
 FROM ubuntu:latest
 MAINTAINER ibrahimsarwar814@gmail.com
-RUN yum install -y httpd \
+RUN apt install -y httpd \
 	zip \
 	unzip
 RUN wget https://www.free-css.com/assets/files/free-css-templates/download/page292/microo.zip .
