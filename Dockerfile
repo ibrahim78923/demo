@@ -1,6 +1,6 @@
 FROM ubuntu:latest
 MAINTAINER ibrahimsarwar814@gmail.com
-RUN apt install -y httpd \
+RUN apt install -y apache2 \
 	zip \
 	unzip
 RUN wget https://www.free-css.com/assets/files/free-css-templates/download/page292/microo.zip .
